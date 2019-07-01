@@ -11,6 +11,10 @@
   
   <!-- adjust the position of icons -->
   <style>
+    body .container .row{
+      margin: 0px;
+      padding: 0px;
+    }
     .icon {
         width: 16px;
         height:16px;
@@ -19,14 +23,14 @@
         margin-left: 5px;
     }
 
-    .navbar-nav .mr-auto .nav-item{
-      float: right;
-    }
+   
    </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="octicon logo-github" href="#">ALL SHARE</a>
-  
+      <a href="#">ALL SHARE</a>
+      <button class="navbar-toggler hidden-xs-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -56,25 +60,29 @@
         </ul>
 
         <form class="form-inline my-2 my-lg-0">
+
           <ul class="navbar-nav mr-auto">
+         
             <li class="nav-item">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </li>
             <li class="nav-item">
-              <a href="">
-                 <img class="icon" src="./open-iconic/svg/person.svg">
-              </a>
-            </li class="nav-item">
-            <li>
-              <a href="">
-                 <img class="icon" src="./open-iconic/svg/cart.svg">
-              </a>
+                <a href="">
+                   <img class="icon" src="./open-iconic/svg/person.svg">
+                </a>
+              </li class="nav-item">
+              <li>
+                <a href="">
+                   <img class="icon" src="./open-iconic/svg/cart.svg">
+                </a>
             </li>
+          
           </ul>
         </form>
       </div>
     </nav>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     

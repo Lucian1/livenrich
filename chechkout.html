@@ -15,18 +15,203 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <title>Checkout</title>
+
+    <style>
+        .container, .row, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xl-12, ul, .card, img{
+            margin: 0px;
+            padding: 0px;
+        }
+        #itemPrice table th{
+            text-align: right;
+        }
+        #itemPrice table td {
+            text-align: right;
+        }
+        #itemPrice table{
+            float: right;
+        }
+        #checkOut-content p, button, select {
+            float: right;
+        }
+    </style>
+
     <script> 
     
-    $(document).ready(function() {
-        $('#header').load('header.html');
-        $('#footer').load('footer.html');
-    });
+        $(document).ready(function() {
+            $('#nav').load('nav.html');
+            $('#recommend').load('recommend.html');
+            $('#footer').load('footer.html');
+        });
 
     </script>
   </head>
   <body>
-    <div id="header"></div>
+        <!-- navigation bar start-->
+        <div id="nav"></div>
+        <!-- navigation bar end-->
+        
+        <div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding: 0px;">       
+            <!-- head image start -->
+            <div class="row">  
+                <div class="card" style="width: 100%;">
+                     <img src="./asset/headIMG.JPG" class="img-fluid" alt="Responsive image" style="margin-top: 0px;">
+                </div>
+            </div>
+            <!-- head image end -->
+            <!-- check out label start-->
+            <div class="row" style="margin-left: 50px; margin-bottom: -20px;">  
+                <div class="p-3 mb-2 bg-white text-dark">
+                    皮肤病 BUNDLE内容
+                    <p class="text-justify" style="font-size:x-small;">*如果没有达到500积分，则不能成功创造bundle,目前积分<b>525</b>积分</p>
+                </div>
+            </div>
+            <!--  check out label end-->
+            <div class="row" style="margin-left: 100px; margin-right: 100px;">
+            <!-- item list start -->
+                <div class="table-responsive"  >
+                        <table class="table">
+                            <thead>
+                                  <tr>
+                                    <th scope="col">商品</th>
+                                    <th scope="col">名称</th>
+                                    <th scope="col">积分</th>
+                                    <th scope="col">价格</th>
+                                    <th scope="col">数量</th>
+                                    <th scope="col">积分小计</th>
+                                    <th scope="col">价格小计</th>
+                                  </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <th scope="row"><img src="./open-iconic/svg/beaker.svg" style="width: 16px"></th>
+                                            <td>均衡营养粉</td>
+                                            <td>60 pp</td>
+                                            <td>$72.00</td>
+                                            <td style="width: 100px;">
+                                                <select class="custom-select custom-select-sm" style="background-color: lightgrey; border-radius: 20px;">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </td>
+                                            <td>60 pp</td>
+                                            <td>$72.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="./open-iconic/svg/beaker.svg" style="width: 16px"></th>
+                                            <td>均衡营养粉</td>
+                                            <td>60 pp</td>
+                                            <td>$72.00</td>
+                                            <td style="width: 100px;">
+                                                <select class="custom-select custom-select-sm" style="background-color: lightgrey; border-radius: 20px;">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </td>
+                                            <td>60 pp</td>
+                                            <td>$72.00</td>
+                                  </tr>
+                                  <tr>
+                                        <th scope="row"><img src="./open-iconic/svg/beaker.svg" style="width: 16px"></th>
+                                        <td>均衡营养粉</td>
+                                        <td>60 pp</td>
+                                        <td>$72.00</td>
+                                        <td style="width: 100px;">
+                                            <select class="custom-select custom-select-sm" style="background-color: lightgrey; border-radius: 20px;">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </td>
+                                        <td>60 pp</td>
+                                        <td>$72.00</td>
+                                   </tr>
+                                   <tr>
+                                        <th scope="row"><img src="./open-iconic/svg/beaker.svg" style="width: 16px"></th>
+                                        <td>均衡营养粉</td>
+                                        <td>60 pp</td>
+                                        <td>$72.00</td>
+                                        <td style="width: 100px;">
+                                            <select class="custom-select custom-select-sm" style="background-color: lightgrey; border-radius: 20px;">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </td>
+                                        <td>60 pp</td>
+                                        <td>$72.00</td>
+                                   </tr>
+                            </tbody>
+                        </table>
+                <!-- item list end -->
+                <!-- price statement start-->
+                        <div id="itemPrice">
+                                <table>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td scope="row">商品数量:</td>
+                                            <td>10</td>
+                                        
+                                          </tr>
+                                          <tr>
+                                            <td scope="row">总积分:</td>
+                                            <td>525 pp</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row">Bundle Discount:</td>
+                                            <td>-$5.00</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">总价格:</th>
+                                            <td>$625.00</t>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">&nbsp;</th>
+                                            <td>&nbsp;</t>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2" scope="row">
+                                                <p class="text-justify" style="font-size:small; margin-bottom: 0px">choose a subscription plan</p>
+                                                <select class="custom-select custom-select-sm" style="background-color: lightgrey; border-radius: 20px;">
+                                                    <option value="1" selected>ONE MONTH</option>
+                                                    <option value="2">ONE SEASON</option>
+                                                    <option value="3">ONE YEAR</option>
+                                                </select>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2" scope="row">
+                                                <button type="button" class="btn btn-outline-primary" style="width: 150px; margin: 5px; border-radius: 75px;">结算</button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2" scope="row">
+                                                <button type="button" class="btn btn-outline-primary" style="width: 150px; margin: 5px; border-radius: 75px;">加入购物车</button>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+                <!-- price statement start-->
+                </div>
+            </div>
+            <!-- recommend items start-->
+            <div id="recommend"></div>
+            <!-- recommend items end-->
+        </div>
+    <!-- copy right start -->
     <div id="footer"></div>
-
+    <!-- copy right end -->
   </body>
 </html>
